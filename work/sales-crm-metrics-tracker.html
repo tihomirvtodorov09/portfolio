@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sales CRM & Metrics Tracker — Tihomir Todorov</title>
+<meta name="description" content="A deliberately lightweight CRM, chosen because it was the right-sized tool for the problem, not because it was the most impressive one." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles/tokens.css">
+<link rel="stylesheet" href="../styles/global.css">
+</head>
+<body>
+<header class="site-nav">
+  <div class="site-nav__inner">
+    <a class="site-nav__logo" href="../index.html">Tihomir Todorov<span class="site-nav__logo-sub">Commercial Systems Builder</span></a>
+    <ul class="site-nav__links">
+      <li><a href="../index.html#track-record">Track Record</a></li>
+      <li><a href="../index.html#case-studies">Case Studies</a></li>
+      <li><a href="../index.html#how-i-work">How I Work</a></li>
+      <li><a href="../index.html#contact">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<div class="case-header">
+  <div class="container">
+    <a class="case-header__back" href="../index.html#case-studies">← All case studies</a>
+    <p class="case-header__tag reveal">Sales Infrastructure</p>
+    <h1 class="case-header__title reveal">Sales CRM & Metrics Tracker</h1>
+    <p class="case-header__dek reveal">A deliberately lightweight CRM, chosen because it was the right-sized tool for the problem, not because it was the most impressive one.</p>
+    <div class="outcome-card reveal">
+    <div class="outcome-card__cell">
+      <div class="outcome-card__label">Business Problem</div>
+      <div class="outcome-card__value">No shared, low-cost way to track leads across salespeople</div>
+    </div>
+    <div class="outcome-card__arrow" aria-hidden="true">→</div>
+    <div class="outcome-card__cell">
+      <div class="outcome-card__label">Solution</div>
+      <div class="outcome-card__value">Lightweight spreadsheet CRM with scripted automation</div>
+    </div>
+    <div class="outcome-card__arrow" aria-hidden="true">→</div>
+    <div class="outcome-card__cell outcome-card__cell--outcome">
+      <div class="outcome-card__label">Outcome</div>
+      <div class="outcome-card__value">Reduced admin, new visibility into metrics</div>
+    </div>
+  </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="compare-grid reveal">
+    <div class="compare-item">
+      <div class="compare-item__title">Tooling Cost</div>
+      <div class="compare-item__row compare-item__row--before">
+        <span class="compare-item__row-label">Before</span>
+        <span class="compare-item__row-value">Paid CRM software</span>
+      </div>
+      <div class="compare-item__row compare-item__row--after">
+        <span class="compare-item__row-label">After</span>
+        <span class="compare-item__row-value">Free, in-house spreadsheet</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="section--tight">
+    <p class="section__eyebrow reveal" style="margin-top:var(--space-5)">System Flow</p>
+    <div class="flow-diagram reveal" aria-label="System flow diagram">
+    <span class="flow-step">Lead entry</span><span class="flow-arrow" aria-hidden="true">→</span><span class="flow-step">Templated follow-up</span><span class="flow-arrow" aria-hidden="true">→</span><span class="flow-step">Notes log</span><span class="flow-arrow" aria-hidden="true">→</span><span class="flow-step">Dashboard rollup</span>
+  </div>
+  </div>
+
+  <div class="spine">
+    
+    <div class="stage reveal  ">
+      <div class="stage__rail" aria-hidden="true">
+        <span class="stage__node"></span>
+        <span class="stage__line"></span>
+      </div>
+      <div class="stage__content">
+        <span class="stage__label">Business Problem</span>
+        <h3 class="stage__title">What was costing the business</h3>
+        <p class="stage__body">Multiple salespeople needed a shared way to track leads, follow-ups, and basic performance metrics, without the cost or overhead of a full CRM platform.</p>
+      </div>
+    </div>
+
+    <div class="stage reveal  ">
+      <div class="stage__rail" aria-hidden="true">
+        <span class="stage__node"></span>
+        <span class="stage__line"></span>
+      </div>
+      <div class="stage__content">
+        <span class="stage__label">My Goal</span>
+        <h3 class="stage__title">What I set out to do</h3>
+        <p class="stage__body">Build the smallest system that solved the problem — a genuine build-vs-buy decision where "buy" would have meant paying for CRM software the team didn't yet need, and "build big" would have meant over-engineering a problem a well-structured spreadsheet could solve.</p>
+      </div>
+    </div>
+
+    <div class="stage reveal  ">
+      <div class="stage__rail" aria-hidden="true">
+        <span class="stage__node"></span>
+        <span class="stage__line"></span>
+      </div>
+      <div class="stage__content">
+        <span class="stage__label">Architecture</span>
+        <h3 class="stage__title">How it’s built</h3>
+        <p class="stage__body">A spreadsheet-based CRM with templated follow-up emails, a notes logging system, conditional formatting for at-a-glance status, and a simple dashboard rolling up activity across salespeople.</p>
+      </div>
+    </div>
+
+    <div class="stage reveal  ">
+      <div class="stage__rail" aria-hidden="true">
+        <span class="stage__node"></span>
+        <span class="stage__line"></span>
+      </div>
+      <div class="stage__content">
+        <span class="stage__label">Implementation</span>
+        <h3 class="stage__title">The details that mattered</h3>
+        <p class="stage__body">Built with scripted automation triggers, which meant resolving permission scope issues along the way, plus fixing special-character corruption that crept into templated email strings.</p>
+      </div>
+    </div>
+
+    <div class="stage reveal  ">
+      <div class="stage__rail" aria-hidden="true">
+        <span class="stage__node"></span>
+        <span class="stage__line"></span>
+      </div>
+      <div class="stage__content">
+        <span class="stage__label">Technology Used</span>
+        <h3 class="stage__title">What it’s built with</h3>
+        <div class="stack-chips"><span class="stack-chip">Google Sheets</span><span class="stack-chip">Apps Script triggers</span><span class="stack-chip">Conditional formatting</span><span class="stack-chip">Dashboard rollups</span></div>
+      </div>
+    </div>
+
+    <div class="stage reveal stage--outcome ">
+      <div class="stage__rail" aria-hidden="true">
+        <span class="stage__node"></span>
+        <span class="stage__line"></span>
+      </div>
+      <div class="stage__content">
+        <span class="stage__label">Business Outcome</span>
+        <h3 class="stage__title">What changed</h3>
+        <p class="stage__body">Reduced admin overhead for tracking leads across salespeople and gave visibility into metrics that previously weren't tracked at all. It's deliberately simple, and has room to expand as the team's needs grow.</p>
+      </div>
+    </div>
+
+    <div class="stage reveal  stage--lessons">
+      <div class="stage__rail" aria-hidden="true">
+        <span class="stage__node"></span>
+        
+      </div>
+      <div class="stage__content">
+        <span class="stage__label">Lessons Learned</span>
+        <h3 class="stage__title">What I took from it</h3>
+        <p class="stage__body">Not every problem needs a platform. Choosing the right-sized tool — free, familiar, and fast to build — was the correct call here, and knowing when not to over-engineer is its own kind of judgement.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section--tight">
+    <p class="section__eyebrow reveal">Engineering Decisions</p>
+    <div class="rationale reveal">
+    <div class="rationale__q">Why a spreadsheet instead of a custom CRM?</div>
+    <div class="rationale__a">The team didn’t yet have a problem that justified the cost or complexity of a dedicated CRM platform. A well-structured spreadsheet solved the actual problem at zero marginal cost.</div>
+  </div>
+  </div>
+
+  <div class="section--tight">
+    <p class="section__eyebrow reveal">In the Field</p>
+    <div class="screenshot-slot reveal">CRM dashboard view — screenshot coming soon</div>
+  </div>
+</div>
+
+<section class="section section--tight">
+  <div class="container">
+    <p class="section__eyebrow">Next</p>
+    <h2 class="section__title"><a class="btn-link" href="lead-lifecycle-automation.html">Lead Lifecycle Automation →</a></h2>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <span>Tihomir Todorov — Commercial Systems Builder</span>
+    <span>Best Rate Removals &amp; Storage</span>
+  </div>
+</footer>
+<script src="../assets/app.js" defer></script>
+</body>
+</html>

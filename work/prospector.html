@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Prospector — Tihomir Todorov</title>
+<meta name="description" content="An experimental B2B lead-generation pipeline, built to reduce dependency on paid inbound lead sources. Still evolving — this is an honest look at a project in progress, not a finished product." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles/tokens.css">
+<link rel="stylesheet" href="../styles/global.css">
+</head>
+<body>
+<header class="site-nav">
+  <div class="site-nav__inner">
+    <a class="site-nav__logo" href="../index.html">Tihomir Todorov<span class="site-nav__logo-sub">Commercial Systems Builder</span></a>
+    <ul class="site-nav__links">
+      <li><a href="../index.html#track-record">Track Record</a></li>
+      <li><a href="../index.html#case-studies">Case Studies</a></li>
+      <li><a href="../index.html#how-i-work">How I Work</a></li>
+      <li><a href="../index.html#contact">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<div class="case-header">
+  <div class="container">
+    <a class="case-header__back" href="../index.html#case-studies">← All case studies</a>
+    <p class="case-header__tag reveal">Outbound / Personal IP</p>
+    <h1 class="case-header__title reveal">Prospector</h1>
+    <p class="case-header__dek reveal">An experimental B2B lead-generation pipeline, built to reduce dependency on paid inbound lead sources. Still evolving — this is an honest look at a project in progress, not a finished product.</p>
+    <div class="outcome-card reveal">
+    <div class="outcome-card__cell">
+      <div class="outcome-card__label">Business Problem</div>
+      <div class="outcome-card__value">Fully dependent on paid inbound leads</div>
+    </div>
+    <div class="outcome-card__arrow" aria-hidden="true">→</div>
+    <div class="outcome-card__cell">
+      <div class="outcome-card__label">Solution</div>
+      <div class="outcome-card__value">OSM-based discovery + AI enrichment + 5-stage pipeline</div>
+    </div>
+    <div class="outcome-card__arrow" aria-hidden="true">→</div>
+    <div class="outcome-card__cell outcome-card__cell--outcome">
+      <div class="outcome-card__label">Outcome</div>
+      <div class="outcome-card__value">Independent outbound channel opened, still early-stage</div>
+    </div>
+  </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="compare-grid reveal">
+    <div class="compare-item">
+      <div class="compare-item__title">Lead Sourcing</div>
+      <div class="compare-item__row compare-item__row--before">
+        <span class="compare-item__row-label">Before</span>
+        <span class="compare-item__row-value">Paid inbound only</span>
+      </div>
+      <div class="compare-item__row compare-item__row--after">
+        <span class="compare-item__row-label">After</span>
+        <span class="compare-item__row-value">Free outbound channel added</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="section--tight">
+    <p class="section__eyebrow reveal" style="margin-top:var(--space-5)">System Flow</p>
+    <div class="flow-diagram reveal" aria-label="System flow diagram">
+    <span class="flow-step">OSM / Overpass discovery</span><span class="flow-arrow" aria-hidden="true">→</span><span class="flow-step">Website enrichment (AI)</span><span class="flow-arrow" aria-hidden="true">→</span><span class="flow-step">Cold email drafting</span><span class="flow-arrow" aria-hidden="true">→</span><span class="flow-step">5-stage pipeline tracking</span>
+  </div>
+  </div>
+
+  <div class="spine">
+    
+    <div class="stage reveal  ">
+      <div class="stage__rail" aria-hidden="true">
+        <span class="stage__node"></span>
+        <span class="stage__line"></span>
+      </div>
+      <div class="stage__content">
+        <span class="stage__label">Business Problem</span>
+        <h3 class="stage__title">What was costing the business</h3>
+        <p class="stage__body">The business's lead generation was entirely dependent on paid inbound sources — comparison sites that charge a premium per lead, with no control over volume, targeting, or timing.</p>
+      </div>
+    </div>
+
+    <div class="stage reveal  ">
+      <div class="stage__rail" aria-hidden="true">
+        <span class="stage__node"></span>
+        <span class="stage__line"></span>
+      </div>
+      <div class="stage__content">
+        <span class="stage__label">My Goal</span>
+        <h3 class="stage__title">What I set out to do</h3>
+        <p class="stage__body">Open an outbound channel that didn't depend on paid lead providers, built as a genuine sales pipeline rather than a raw contact list — something that could be tested, refined, and expanded over time rather than a one-off scraper.</p>
+      </div>
+    </div>
+
+    <div class="stage reveal  ">
+      <div class="stage__rail" aria-hidden="true">
+        <span class="stage__node"></span>
+        <span class="stage__line"></span>
+      </div>
+      <div class="stage__content">
+        <span class="stage__label">Architecture</span>
+        <h3 class="stage__title">How it’s built</h3>
+        <p class="stage__body">Lead discovery runs on open map data rather than a paid data source. An AI model enriches each result by reading the prospect's website and drafting a tailored cold email. A pipeline tracks each prospect through a five-stage chase timeline, mirroring how a real sales process actually moves rather than treating outreach as a single blast.</p>
+      </div>
+    </div>
+
+    <div class="stage reveal  ">
+      <div class="stage__rail" aria-hidden="true">
+        <span class="stage__node"></span>
+        <span class="stage__line"></span>
+      </div>
+      <div class="stage__content">
+        <span class="stage__label">Implementation</span>
+        <h3 class="stage__title">The details that mattered</h3>
+        <p class="stage__body">Built and run locally, as personal IP distinct from the internal company toolset. This is still an active, evolving project rather than a finished, deployed system.</p>
+      </div>
+    </div>
+
+    <div class="stage reveal  ">
+      <div class="stage__rail" aria-hidden="true">
+        <span class="stage__node"></span>
+        <span class="stage__line"></span>
+      </div>
+      <div class="stage__content">
+        <span class="stage__label">Technology Used</span>
+        <h3 class="stage__title">What it’s built with</h3>
+        <div class="stack-chips"><span class="stack-chip">OpenStreetMap / Overpass API</span><span class="stack-chip">Ollama (local AI)</span><span class="stack-chip">PHP scraper proxy</span><span class="stack-chip">Pipeline tracking</span></div>
+      </div>
+    </div>
+
+    <div class="stage reveal stage--outcome ">
+      <div class="stage__rail" aria-hidden="true">
+        <span class="stage__node"></span>
+        <span class="stage__line"></span>
+      </div>
+      <div class="stage__content">
+        <span class="stage__label">Business Outcome</span>
+        <h3 class="stage__title">What changed</h3>
+        <p class="stage__body">In its current state, Prospector has opened an outbound lead channel that doesn't rely on paid comparison sites, with a pipeline structure built around how sales conversations actually progress. It's early — I'm not claiming a mature, measured impact yet, and I'd rather be direct about that than overstate it.</p>
+      </div>
+    </div>
+
+    <div class="stage reveal  stage--lessons">
+      <div class="stage__rail" aria-hidden="true">
+        <span class="stage__node"></span>
+        
+      </div>
+      <div class="stage__content">
+        <span class="stage__label">Lessons Learned</span>
+        <h3 class="stage__title">What I took from it</h3>
+        <p class="stage__body">Free, open data sources can replace paid ones for lead discovery if you're willing to build the enrichment layer yourself. The harder problem turned out to be less about finding prospects and more about writing outreach that doesn't read as generic.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section--tight">
+    <p class="section__eyebrow reveal">Engineering Decisions</p>
+    <div class="rationale reveal">
+    <div class="rationale__q">Why OpenStreetMap instead of a paid data provider?</div>
+    <div class="rationale__a">It removes the recurring per-lead cost entirely — the trade-off is building the enrichment layer yourself, which was the more interesting engineering problem anyway.</div>
+  </div>
+  </div>
+
+  <div class="section--tight">
+    <p class="section__eyebrow reveal">In the Field</p>
+    <div class="screenshot-slot reveal">Prospector pipeline view — screenshot coming soon</div>
+  </div>
+</div>
+
+<section class="section section--tight">
+  <div class="container">
+    <p class="section__eyebrow">Next</p>
+    <h2 class="section__title"><a class="btn-link" href="video-survey-ai.html">Video Survey AI →</a></h2>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <span>Tihomir Todorov — Commercial Systems Builder</span>
+    <span>Best Rate Removals &amp; Storage</span>
+  </div>
+</footer>
+<script src="../assets/app.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+:root {
+  /* Color */
+  --paper: #F7F7F3;
+  --paper-raised: #FFFFFF;
+  --ink: #16191C;
+  --ink-soft: #52565A;
+  --ink-faint: #8A8D87;
+  --signal: #1F5F58;
+  --signal-soft: #E4EEEC;
+  --ledger: #A8672B;
+  --ledger-soft: #F5EBDF;
+  --line: #DEDCD3;
+  --line-strong: #C7C4B8;
+  --down: #A8402F;
+
+  /* Type */
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-body: 'IBM Plex Sans', -apple-system, sans-serif;
+  --font-mono: 'IBM Plex Mono', 'SF Mono', monospace;
+
+  /* Scale */
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.75rem;
+  --space-4: 2.75rem;
+  --space-5: 4.5rem;
+  --space-6: 7rem;
+  --space-7: 10rem;
+  --space-8: 13rem;
+
+  --radius: 4px;
+  --max-width: 1160px;
+  --measure: 62ch;
+}
+
+@media (prefers-color-scheme: dark) {
+  /* Intentionally not implementing a dark mode variant right now —
+     the editorial paper/ledger concept is the design, not a theme toggle. */
+}
