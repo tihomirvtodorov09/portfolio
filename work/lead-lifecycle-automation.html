@@ -115,7 +115,7 @@
       </div>
       <div class="stage__content">
         <span class="stage__label">Architecture</span>
-        <h3 class="stage__title">How it’s built</h3>
+        <h3 class="stage__title">How it's built</h3>
         <p class="stage__body">A Gmail-star-driven state machine built in Google Apps Script. A blue star starts the sequence; a green tick stops it. Source-specific parsers read each lead type, distinguishing GetAMover from the company website by sender address rather than subject line, since both use identical wording. A six-day follow-up sequence runs on top, with Twilio SMS triggered on day zero and after no-answer calls. Office-hours logic shifts leads that arrive late in the day forward by one day, so no one gets a late-night text. Two additional campaign scripts run monthly re-engagement passes: one scans the previous two months of leads for a win-back pass, the other scans the current month's inbound leads but filters by each lead's actual move date, so promotions reach people moving in a specific window regardless of when they first enquired.</p>
       </div>
     </div>
@@ -139,7 +139,7 @@
       </div>
       <div class="stage__content">
         <span class="stage__label">Technology Used</span>
-        <h3 class="stage__title">What it’s built with</h3>
+        <h3 class="stage__title">What it's built with</h3>
         <div class="stack-chips"><span class="stack-chip">Google Apps Script</span><span class="stack-chip">Gmail API</span><span class="stack-chip">PropertiesService</span><span class="stack-chip">Twilio SMS</span></div>
       </div>
     </div>
@@ -183,8 +183,8 @@
 
   <div class="section--tight">
     <p class="section__eyebrow reveal">In the Field</p>
-    <div class="screenshot-slot reveal">Gmail star-label triage view — screenshot coming soon</div>
-<div class="screenshot-slot reveal">Apps Script trigger configuration — screenshot coming soon</div>
+    <div class="screenshot-slot reveal"><img src="assets/lead_auto_response.jpg" alt="Lead Auto Response Engine — Apps Script editor showing the autoReplyToLeads function, execution stats (9,463 runs, 0% error rate), and OAuth scope" loading="lazy"/></div>
+<div class="screenshot-slot reveal"><img src="assets/lead_noresponse_automation.jpg" alt="Auto Follow No Answer — Apps Script editor showing the followUpNoAnswerLeads function, execution stats (1,894 runs, 0% error rate), and the automation's task checklist" loading="lazy"/></div>
   </div>
 </div>
 
