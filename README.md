@@ -28,8 +28,17 @@ Add a black-and-white (or desaturated) photo at that exact path and it will appe
 If the file is missing, the hero gracefully shows an empty panel instead of a broken image icon —
 so the site works fine without a photo too, this just adds it in.
 
-**3. Screenshots** — each case study page has dashed placeholder boxes under "In the Field"
-marking where a real screenshot should go. To add one:
+**3. Screenshots and video** — the AI Quoting System and Prospector pages now reference
+real files that need to be added to `assets/` (I don't have these — only you do):
+- `assets/AI quote calculator.mp4` — video for the AI Quoting System page
+- `assets/Calculator.jpg` and `assets/Calculator1.jpg` — Volume Calculator screenshots
+- `assets/Prospector1.jpg` and `assets/Prospector2.jpg` — Prospector screenshots
+
+Drop those 5 files into the `assets/` folder (same names, spaces and all — the HTML
+already handles the space in the video filename) and they'll appear immediately.
+
+For any other case study, each dashed placeholder box under "In the Field" marks where
+a real screenshot should go. To add one:
 - Save the screenshot as e.g. `assets/quoting-tool-1.png`
 - In the relevant `work/*.html` file, find the matching `<div class="screenshot-slot">` and
   replace its contents with `<img src="../assets/quoting-tool-1.png" alt="...">`

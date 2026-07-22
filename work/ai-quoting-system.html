@@ -82,7 +82,9 @@
   </div>
   </div>
 
-  <div class="spine">
+  <div class="case-body">
+    <div class="case-body__main">
+      <div class="spine">
     
     <div class="stage reveal  ">
       <div class="stage__rail" aria-hidden="true">
@@ -169,9 +171,9 @@
     </div>
   </div>
 
-  <div class="section--tight">
-    <p class="section__eyebrow reveal">Engineering Decisions</p>
-    <div class="rationale reveal">
+      <div class="section--tight">
+        <p class="section__eyebrow reveal">Engineering Decisions</p>
+        <div class="rationale reveal">
     <div class="rationale__q">Why local AI (Ollama) for extraction?</div>
     <div class="rationale__a">Survey documents contain customer data. Running extraction locally means that data never has to leave the business.</div>
   </div>
@@ -183,16 +185,32 @@
     <div class="rationale__q">Why reverse-engineer the existing pricing model rather than design a new one?</div>
     <div class="rationale__a">The business already had years of correct commercial judgement built into how surveyors priced jobs. The risk wasn’t that the logic was wrong — it was that it only lived in people’s heads. Encoding it faithfully was more valuable, and more defensible, than replacing it.</div>
   </div>
-  </div>
+      </div>
 
-  <div class="section--tight">
-    <p class="section__eyebrow reveal">In the Field</p>
- <video controls width="100%" style="border-radius:4px; border:1px solid var(--line-strong);">
-  <source src="../assets/AI quote calculator.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
- <div class="screenshot-slot reveal"><img src="../assets/Calculator.jpg" alt="Volume calculator using fuzzy logic and AI" loading="lazy"/></div>
-<div class="screenshot-slot reveal"><img src="../assets/Calculator1.jpg" alt="Volume calculator using fuzzy logic and AI to calculate volume, weight, etc." loading="lazy"/></div>
+      <div class="section--tight">
+        <p class="section__eyebrow reveal">Under the Hood</p>
+        
+      </div>
+    </div>
+
+    <div class="case-body__aside">
+      <p class="section__eyebrow reveal">In the Field</p>
+      <div class="aside-shot reveal">
+        <video controls width="100%" style="display:block;">
+          <source src="../assets/AI%20quote%20calculator.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="aside-shot__caption">AI quote calculator in action</div>
+      </div>
+<div class="aside-shot reveal">
+        <img src="../assets/Calculator.jpg" alt="Volume calculator using fuzzy logic and AI" loading="lazy">
+        <div class="aside-shot__caption">Volume calculator using fuzzy logic and AI</div>
+      </div>
+<div class="aside-shot reveal">
+        <img src="../assets/Calculator1.jpg" alt="Volume calculator — calculating volume, weight, and more" loading="lazy">
+        <div class="aside-shot__caption">Volume calculator — calculating volume, weight, and more</div>
+      </div>
+    </div>
   </div>
 </div>
 
