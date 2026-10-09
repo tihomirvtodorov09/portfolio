@@ -1,39 +1,41 @@
 :root {
-  /* Color */
-  --paper: #F7F7F3;
-  --paper-raised: #FFFFFF;
-  --ink: #16191C;
-  --ink-soft: #52565A;
-  --ink-faint: #8A8D87;
-  --signal: #1F5F58;
-  --signal-soft: #E4EEEC;
-  --ledger: #A8672B;
-  --ledger-soft: #F5EBDF;
-  --line: #DEDCD3;
-  --line-strong: #C7C4B8;
-  --down: #A8402F;
+  /* ---- color ---- */
+  --paper:      #ffffff;   /* page background */
+  --paper-2:    #f3f5f9;   /* panels, tiles, image frames */
+  --ink:        #0e1116;
+  --ink-soft:   #384250;   /* body copy: strong contrast on white */
+  --ink-faint:  #596473;   /* small text: still passes AA on white */
+  --line:       #dfe4ec;
+  --line-strong:#c3cad6;
 
-  /* Type */
-  --font-display: 'Fraunces', Georgia, serif;
-  --font-body: 'IBM Plex Sans', -apple-system, sans-serif;
-  --font-mono: 'IBM Plex Mono', 'SF Mono', monospace;
+  --accent:     #1d4ed8;   /* cobalt blue */
+  --accent-2:   #17368f;
+  --accent-soft:#e8eefc;
+  --accent-on-dark:#a9bcff; /* accent for text on the dark panel */
 
-  /* Scale */
-  --space-1: 0.5rem;
-  --space-2: 1rem;
-  --space-3: 1.75rem;
-  --space-4: 2.75rem;
-  --space-5: 4.5rem;
-  --space-6: 7rem;
-  --space-7: 10rem;
-  --space-8: 13rem;
+  --before:     #b4382a;   /* "before" state */
+  --after:      var(--accent);
 
-  --radius: 4px;
-  --max-width: 1160px;
-  --measure: 62ch;
-}
+  --code-bg:    #0f1319;
+  --code-text:  #e6eaf1;
+  --code-comment: #7f93a8;
 
-@media (prefers-color-scheme: dark) {
-  /* Intentionally not implementing a dark mode variant right now —
-     the editorial paper/ledger concept is the design, not a theme toggle. */
+  /* ---- type ---- */
+  --font-display: 'Bricolage Grotesque', system-ui, sans-serif;
+  --font-body:    'Figtree', system-ui, sans-serif;
+  --font-mono:    'IBM Plex Mono', ui-monospace, monospace;
+
+  /* ---- space ---- */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 14px;
+  --space-4: 22px;
+  --space-5: 34px;
+  --space-6: 52px;
+  --space-7: 76px;
+  --space-8: 108px;
+
+  --radius: 12px;
+  --container: 880px;
+  --container-wide: 1120px;
 }

@@ -3,22 +3,21 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Video Survey AI — Tihomir Todorov</title>
-<meta name="description" content="A computer vision and AI tool that generates room-by-room surveyor reports from job footage, aimed at making manual surveys scale. Still being validated — this is forward-looking work, not a finished case study." />
+<title>Video Survey AI | Tihomir Todorov</title>
+<meta name="description" content="A computer vision and AI tool that writes a room-by-room surveyor report from video of a job, so surveys don't all need someone on a live call. Still being tested, so this is work in progress, not a finished case study." />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../styles/tokens.css">
 <link rel="stylesheet" href="../styles/global.css">
 </head>
 <body>
 <header class="site-nav">
   <div class="site-nav__inner">
-    <a class="site-nav__logo" href="../index.html">Tihomir Todorov<span class="site-nav__logo-sub">Commercial Systems Builder</span></a>
+    <a class="site-nav__logo" href="../index.html">Tihomir Todorov<span class="site-nav__logo-sub">Sales × Technology</span></a>
     <ul class="site-nav__links">
-      <li><a href="../index.html#track-record">Track Record</a></li>
-      <li><a href="../index.html#case-studies">Case Studies</a></li>
-      <li><a href="../index.html#how-i-work">How I Work</a></li>
+      <li><a href="../index.html#track-record">Track record</a></li>
+      <li><a href="../index.html#how-i-work">How I work</a></li>
+      <li><a href="../index.html#case-studies">Tools I've built</a></li>
       <li><a href="../index.html#contact">Contact</a></li>
     </ul>
   </div>
@@ -27,23 +26,23 @@
 <div class="case-header">
   <div class="container">
     <a class="case-header__back" href="../index.html#case-studies">← All case studies</a>
-    <p class="case-header__tag reveal">Operations — In Development</p>
+    <p class="case-header__tag reveal">Operations, in development</p>
     <h1 class="case-header__title reveal">Video Survey AI</h1>
-    <p class="case-header__dek reveal">A computer vision and AI tool that generates room-by-room surveyor reports from job footage, aimed at making manual surveys scale. Still being validated — this is forward-looking work, not a finished case study.</p>
+    <p class="case-header__dek reveal">A computer vision and AI tool that writes a room-by-room surveyor report from video of a job, so surveys don't all need someone on a live call. Still being tested, so this is work in progress, not a finished case study.</p>
     <div class="outcome-card reveal">
     <div class="outcome-card__cell">
       <div class="outcome-card__label">Business Problem</div>
-      <div class="outcome-card__value">In-person and video-call surveys don’t scale</div>
+      <div class="outcome-card__value">In-person and video-call surveys don't scale</div>
     </div>
     <div class="outcome-card__arrow" aria-hidden="true">→</div>
     <div class="outcome-card__cell">
       <div class="outcome-card__label">Solution</div>
-      <div class="outcome-card__value">Computer vision + LLM pipeline generating reports from footage</div>
+      <div class="outcome-card__value">Computer vision and an LLM turn footage into a report</div>
     </div>
     <div class="outcome-card__arrow" aria-hidden="true">→</div>
     <div class="outcome-card__cell outcome-card__cell--outcome">
       <div class="outcome-card__label">Outcome</div>
-      <div class="outcome-card__value">In development — accuracy calibration ongoing</div>
+      <div class="outcome-card__value">In development, with accuracy still being tuned</div>
     </div>
   </div>
   </div>
@@ -65,7 +64,7 @@
   </div>
 
   <div class="section--tight">
-    <p class="section__eyebrow reveal" style="margin-top:var(--space-5)">System Flow</p>
+    <p class="section__eyebrow reveal" style="margin-top:var(--space-5)">How it flows</p>
     <div class="flow-diagram reveal" aria-label="System flow diagram">
     <span class="flow-step">Job footage</span><span class="flow-arrow" aria-hidden="true">→</span><span class="flow-step">Computer vision pass</span><span class="flow-arrow" aria-hidden="true">→</span><span class="flow-step">LLM reasoning</span><span class="flow-arrow" aria-hidden="true">→</span><span class="flow-step">Room-by-room report</span>
   </div>
@@ -83,7 +82,7 @@
       <div class="stage__content">
         <span class="stage__label">Business Problem</span>
         <h3 class="stage__title">What was costing the business</h3>
-        <p class="stage__body">In-person and video-call surveys don't scale well — each one needs a surveyor's real-time attention, and the resulting report still has to be written up afterwards. As volume grows, that manual step becomes the bottleneck.</p>
+        <p class="stage__body">In-person and video-call surveys don't scale well. Each one needs a surveyor's attention in real time, and the report still has to be written up afterwards. As volume grows, that manual step becomes the bottleneck.</p>
       </div>
     </div>
 
@@ -95,7 +94,7 @@
       <div class="stage__content">
         <span class="stage__label">My Goal</span>
         <h3 class="stage__title">What I set out to do</h3>
-        <p class="stage__body">Explore whether job footage alone — a walkthrough video, not a live call — could be turned directly into a structured, room-by-room surveyor report, removing the need for a surveyor to be present in real time for every job.</p>
+        <p class="stage__body">I wanted to find out whether video of a job on its own, a walkthrough recording instead of a live call, could be turned straight into a structured, room-by-room surveyor report. That would mean a surveyor doesn't have to be there in real time for every job.</p>
       </div>
     </div>
 
@@ -107,7 +106,7 @@
       <div class="stage__content">
         <span class="stage__label">Architecture</span>
         <h3 class="stage__title">How it’s built</h3>
-        <p class="stage__body">A computer vision and AI pipeline that processes removals job footage and generates room-by-room reports, including cubic footage and packing material estimates, with ongoing calibration work to improve accuracy on both fronts.</p>
+        <p class="stage__body">A computer vision and AI pipeline processes video from removals jobs and produces room-by-room reports, including cubic footage and packing material estimates. I'm still calibrating it to make both more accurate.</p>
       </div>
     </div>
 
@@ -119,7 +118,7 @@
       <div class="stage__content">
         <span class="stage__label">Implementation</span>
         <h3 class="stage__title">The details that mattered</h3>
-        <p class="stage__body">Currently in active development. The core challenge is calibration — getting cubic footage and packing material estimates to a level of accuracy that's actually usable for pricing, not just directionally correct.</p>
+        <p class="stage__body">It's in active development. The main challenge is calibration: getting the cubic footage and packing material estimates accurate enough to use for pricing, not just roughly right.</p>
       </div>
     </div>
 
@@ -143,7 +142,7 @@
       <div class="stage__content">
         <span class="stage__label">Business Outcome</span>
         <h3 class="stage__title">What changed</h3>
-        <p class="stage__body">Business impact is still being validated. I'd rather show this honestly as work in progress than attach a number to it before the accuracy work is done.</p>
+        <p class="stage__body">The business impact is still being checked. I'd rather show this honestly as work in progress than put a number on it before the accuracy work is done.</p>
       </div>
     </div>
 
@@ -155,7 +154,7 @@
       <div class="stage__content">
         <span class="stage__label">Lessons Learned</span>
         <h3 class="stage__title">What I took from it</h3>
-        <p class="stage__body">Computer vision estimation is a harder calibration problem than document-based extraction — a video frame doesn't carry the same explicit structure as a typed inventory list, so the model has to infer far more.</p>
+        <p class="stage__body">Estimating from video is a harder calibration problem than pulling data from documents. A video frame doesn't have the clear structure of a typed inventory list, so the model has to work out far more for itself.</p>
       </div>
     </div>
   </div>
@@ -164,13 +163,8 @@
         <p class="section__eyebrow reveal">Engineering Decisions</p>
         <div class="rationale reveal">
     <div class="rationale__q">Why footage instead of requiring a live call?</div>
-    <div class="rationale__a">A recorded walkthrough removes the scheduling constraint entirely — the surveyor’s time becomes the bottleneck only for review, not for every single visit.</div>
+    <div class="rationale__a">A recorded walkthrough gets rid of the scheduling problem. The surveyor's time is only needed to review the report, not for every single visit.</div>
   </div>
-      </div>
-
-      <div class="section--tight">
-        <p class="section__eyebrow reveal">Under the Hood</p>
-        
       </div>
     </div>
 
@@ -198,14 +192,14 @@
 <section class="section section--tight">
   <div class="container">
     <p class="section__eyebrow">Next</p>
-    <h2 class="section__title"><a class="btn-link" href="sales-crm-metrics-tracker.html">Sales CRM & Metrics Tracker →</a></h2>
+    <h2 class="section__title"><a class="btn-link" href="ops-hub.html">Ops Hub →</a></h2>
   </div>
 </section>
 
 <footer class="footer">
   <div class="container footer__inner">
-    <span>Tihomir Todorov — Commercial Systems Builder</span>
-    <span>Copyright 2026</span>
+    <span>Tihomir Todorov</span>
+    <span>© 2026</span>
   </div>
 </footer>
 <script src="../assets/app.js" defer></script>

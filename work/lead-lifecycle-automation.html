@@ -3,22 +3,21 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Lead Lifecycle Automation — Tihomir Todorov</title>
-<meta name="description" content="Leads from four different sources were followed up manually and inconsistently. I built a system that responds instantly, then re-engages leads that went cold." />
+<title>Lead Lifecycle Automation | Tihomir Todorov</title>
+<meta name="description" content="Leads came in from four different sources and I followed them up by hand, which was patchy. I built a tool that replies straight away and then goes back to leads that went quiet." />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../styles/tokens.css">
 <link rel="stylesheet" href="../styles/global.css">
 </head>
 <body>
 <header class="site-nav">
   <div class="site-nav__inner">
-    <a class="site-nav__logo" href="../index.html">Tihomir Todorov<span class="site-nav__logo-sub">Commercial Systems Builder</span></a>
+    <a class="site-nav__logo" href="../index.html">Tihomir Todorov<span class="site-nav__logo-sub">Sales × Technology</span></a>
     <ul class="site-nav__links">
-      <li><a href="../index.html#track-record">Track Record</a></li>
-      <li><a href="../index.html#case-studies">Case Studies</a></li>
-      <li><a href="../index.html#how-i-work">How I Work</a></li>
+      <li><a href="../index.html#track-record">Track record</a></li>
+      <li><a href="../index.html#how-i-work">How I work</a></li>
+      <li><a href="../index.html#case-studies">Tools I've built</a></li>
       <li><a href="../index.html#contact">Contact</a></li>
     </ul>
   </div>
@@ -29,21 +28,21 @@
     <a class="case-header__back" href="../index.html#case-studies">← All case studies</a>
     <p class="case-header__tag reveal">Lead Management</p>
     <h1 class="case-header__title reveal">Lead Lifecycle Automation</h1>
-    <p class="case-header__dek reveal">Leads from four different sources were followed up manually and inconsistently. I built a system that responds instantly, then re-engages leads that went cold.</p>
+    <p class="case-header__dek reveal">Leads came in from four different sources and I followed them up by hand, which was patchy. I built a tool that replies straight away and then goes back to leads that went quiet.</p>
     <div class="outcome-card reveal">
     <div class="outcome-card__cell">
       <div class="outcome-card__label">Business Problem</div>
-      <div class="outcome-card__value">Leads from 4 sources followed up manually and inconsistently</div>
+      <div class="outcome-card__value">Leads from four sources, followed up by hand and inconsistently</div>
     </div>
     <div class="outcome-card__arrow" aria-hidden="true">→</div>
     <div class="outcome-card__cell">
       <div class="outcome-card__label">Solution</div>
-      <div class="outcome-card__value">Gmail-star state machine + SMS + win-back campaigns</div>
+      <div class="outcome-card__value">A Gmail star system, SMS messages and win-back campaigns</div>
     </div>
     <div class="outcome-card__arrow" aria-hidden="true">→</div>
     <div class="outcome-card__cell outcome-card__cell--outcome">
       <div class="outcome-card__label">Outcome</div>
-      <div class="outcome-card__value">Near-instant, consistent response with automatic re-engagement</div>
+      <div class="outcome-card__value">Quick, consistent replies and automatic re-engagement</div>
     </div>
   </div>
   </div>
@@ -76,7 +75,7 @@
   </div>
 
   <div class="section--tight">
-    <p class="section__eyebrow reveal" style="margin-top:var(--space-5)">System Flow</p>
+    <p class="section__eyebrow reveal" style="margin-top:var(--space-5)">How it flows</p>
     <div class="flow-diagram reveal" aria-label="System flow diagram">
     <span class="flow-step">Lead received</span><span class="flow-arrow" aria-hidden="true">→</span><span class="flow-step">Source parser</span><span class="flow-arrow" aria-hidden="true">→</span><span class="flow-step">Gmail state machine</span><span class="flow-arrow" aria-hidden="true">→</span><span class="flow-step">6-day sequence + SMS</span><span class="flow-arrow" aria-hidden="true">→</span><span class="flow-step">Win-back campaign</span>
   </div>
@@ -94,7 +93,7 @@
       <div class="stage__content">
         <span class="stage__label">Business Problem</span>
         <h3 class="stage__title">What was costing the business</h3>
-        <p class="stage__body">Leads arrived from four different sources — Compare My Move, KonnectYou, GetAMover, and the company website — and were followed up manually. Response time depended on who was free and how busy the day was. Two of those sources even shared the same subject line ("New Quote Request"), making manual triage slower still.</p>
+        <p class="stage__body">Leads came from four places: Compare My Move, KonnectYou, GetAMover and the company website. I followed them up by hand, so how fast I replied depended on who was free and how busy the day was. Two of the sources even used the same subject line, "New Quote Request", which made sorting them by hand slower still.</p>
       </div>
     </div>
 
@@ -106,7 +105,7 @@
       <div class="stage__content">
         <span class="stage__label">My Goal</span>
         <h3 class="stage__title">What I set out to do</h3>
-        <p class="stage__body">Build a system that responded to every lead instantly and consistently, regardless of source or time of day — and then went further, re-engaging leads that hadn't converted the first time, rather than letting them disappear after one missed follow-up.</p>
+        <p class="stage__body">I wanted every lead to get a quick, consistent reply whatever the source or time of day. I also wanted to go back to leads that hadn't booked the first time, instead of letting them vanish after one missed follow-up.</p>
       </div>
     </div>
 
@@ -118,7 +117,7 @@
       <div class="stage__content">
         <span class="stage__label">Architecture</span>
         <h3 class="stage__title">How it’s built</h3>
-        <p class="stage__body">A Gmail-star-driven state machine built in Google Apps Script. A blue star starts the sequence; a green tick stops it. Source-specific parsers read each lead type, distinguishing GetAMover from the company website by sender address rather than subject line, since both use identical wording. A six-day follow-up sequence runs on top, with Twilio SMS triggered on day zero and after no-answer calls. Office-hours logic shifts leads that arrive late in the day forward by one day, so no one gets a late-night text. Two additional campaign scripts run monthly re-engagement passes: one scans the previous two months of leads for a win-back pass, the other scans the current month's inbound leads but filters by each lead's actual move date, so promotions reach people moving in a specific window regardless of when they first enquired.</p>
+        <p class="stage__body">It's built in Google Apps Script and runs on Gmail stars. A blue star starts the sequence and a green tick stops it. Each lead source has its own parser. GetAMover and the company website use identical wording, so I tell them apart by sender address instead of subject line. On top of that sits a six-day follow-up sequence, with a Twilio text message on day zero and after calls that go unanswered. Leads that arrive late in the day are pushed back a day, so nobody gets a text at night. Two more scripts run a monthly re-engagement pass. One looks back over the previous two months of leads for a win-back campaign. The other looks at the current month's enquiries but filters on each lead's actual move date, so promotions reach people who are moving in a particular window, whenever they first got in touch.</p>
       </div>
     </div>
 
@@ -130,7 +129,7 @@
       <div class="stage__content">
         <span class="stage__label">Implementation</span>
         <h3 class="stage__title">The details that mattered</h3>
-        <p class="stage__body">PropertiesService tracks send-state across all sources to prevent duplicate sends, with a shared daily send limit so volume stays predictable. A recurring debugging challenge was false-positive reply detection — the script would occasionally think a lead had replied when it hadn't — solved by adding a date filter to Gmail's search query so only genuinely new messages counted as replies. Getting the correct internal label IDs for Apps Script's search syntax took some trial and error, since Gmail's star types aren't documented in an obviously accessible way.</p>
+        <p class="stage__body">PropertiesService records what's been sent across all sources, which stops duplicate sends, and a shared daily limit keeps volume predictable. One bug kept coming back: the script would think a lead had replied when they hadn't. Adding a date filter to the Gmail search fixed it, so only genuinely new messages count as replies. Finding the right internal label IDs for Apps Script's search took some trial and error, because Gmail's star types aren't clearly documented.</p>
       </div>
     </div>
 
@@ -154,7 +153,7 @@
       <div class="stage__content">
         <span class="stage__label">Business Outcome</span>
         <h3 class="stage__title">What changed</h3>
-        <p class="stage__body">Every lead now gets a near-instant, consistent first response regardless of which of the four sources it came from or what time it arrived. Leads that don't convert immediately are re-engaged automatically rather than left cold. Manual admin time per lead dropped, and follow-up no longer depends on who happens to be available that day.</p>
+        <p class="stage__body">Every lead now gets a quick, consistent first reply, whichever of the four sources it came from and whatever time it arrived. Leads that don't book straight away are followed up again automatically instead of going cold. I spend less time on admin per lead, and follow-up no longer depends on who's free that day.</p>
       </div>
     </div>
 
@@ -166,7 +165,7 @@
       <div class="stage__content">
         <span class="stage__label">Lessons Learned</span>
         <h3 class="stage__title">What I took from it</h3>
-        <p class="stage__body">Better communication beats simply communicating faster. Speed matters, but the leads that actually convert are the ones who feel like they're dealing with someone consistent and attentive — not just the first company to reply. The hardest part of this build wasn't the automation logic, it was correctly modelling the business's real communication rhythm.</p>
+        <p class="stage__body">Better communication matters more than just being faster. Speed helps, but the leads that book are the ones who feel they're dealing with someone consistent and attentive, not just whoever replied first. The hard part wasn't the automation logic. It was getting the system to follow how the business actually talks to customers.</p>
       </div>
     </div>
   </div>
@@ -175,11 +174,11 @@
         <p class="section__eyebrow reveal">Engineering Decisions</p>
         <div class="rationale reveal">
     <div class="rationale__q">Why Google Apps Script?</div>
-    <div class="rationale__a">It runs natively inside Gmail and Google Workspace, where the leads already live — no separate server or hosting needed for something that just has to watch an inbox and send messages.</div>
+    <div class="rationale__a">It runs inside Gmail and Google Workspace, where the leads already are, so there's no server or hosting to set up for something that only has to watch an inbox and send messages.</div>
   </div>
 <div class="rationale reveal">
     <div class="rationale__q">Why Twilio for SMS?</div>
-    <div class="rationale__a">Reliable delivery and a straightforward API meant SMS could be added as a fallback channel without building telephony infrastructure from scratch.</div>
+    <div class="rationale__a">It delivers reliably and the API is simple, so I could add SMS as a backup channel without building any phone infrastructure.</div>
   </div>
       </div>
 
@@ -232,12 +231,12 @@ function getSubject(day) {
     <div class="case-body__aside">
       <p class="section__eyebrow reveal">In the Field</p>
       <div class="aside-shot reveal">
-        <img src="../assets/lead-noresponse-automation.jpg" alt="Auto follow-up for unanswered leads — Apps Script project overview" loading="lazy">
-        <div class="aside-shot__caption">Auto follow-up for unanswered leads — Apps Script project overview</div>
+        <img src="../assets/lead-noresponse-automation.jpg" alt="Auto follow-up for unanswered leads: Apps Script project overview" loading="lazy">
+        <div class="aside-shot__caption">Auto follow-up for unanswered leads: Apps Script project overview</div>
       </div>
 <div class="aside-shot reveal">
-        <img src="../assets/lead-auto-response.jpg" alt="Lead auto-response engine — Apps Script project overview" loading="lazy">
-        <div class="aside-shot__caption">Lead auto-response engine — Apps Script project overview</div>
+        <img src="../assets/lead-auto-response.jpg" alt="Lead auto-response engine: Apps Script project overview" loading="lazy">
+        <div class="aside-shot__caption">Lead auto-response engine: Apps Script project overview</div>
       </div>
 <div class="aside-shot reveal">
         <img src="../assets/code-lead-chase-loop.png" alt="The 6-day chase loop, redacted" loading="lazy">
@@ -250,14 +249,14 @@ function getSubject(day) {
 <section class="section section--tight">
   <div class="container">
     <p class="section__eyebrow">Next</p>
-    <h2 class="section__title"><a class="btn-link" href="ai-quoting-system.html">AI Quoting System →</a></h2>
+    <h2 class="section__title"><a class="btn-link" href="ai-quoting-system.html">AI Quoting Tool →</a></h2>
   </div>
 </section>
 
 <footer class="footer">
   <div class="container footer__inner">
-    <span>Tihomir Todorov — Commercial Systems Builder</span>
-    <span>Copyright 2026</span>
+    <span>Tihomir Todorov</span>
+    <span>© 2026</span>
   </div>
 </footer>
 <script src="../assets/app.js" defer></script>

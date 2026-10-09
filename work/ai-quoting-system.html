@@ -3,22 +3,21 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>AI Quoting System — Tihomir Todorov</title>
-<meta name="description" content="Quote preparation took up to twenty minutes and varied by whoever wrote it. I reverse-engineered the business’s existing pricing logic and encoded it into software — I didn’t invent a new pricing model, I standardised the real one." />
+<title>AI Quoting Tool | Tihomir Todorov</title>
+<meta name="description" content="A quote could take up to twenty minutes and came out differently depending on who wrote it. I worked out the pricing rules the business already used and built them into software. I didn't invent a new pricing model. I made the existing one consistent." />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../styles/tokens.css">
 <link rel="stylesheet" href="../styles/global.css">
 </head>
 <body>
 <header class="site-nav">
   <div class="site-nav__inner">
-    <a class="site-nav__logo" href="../index.html">Tihomir Todorov<span class="site-nav__logo-sub">Commercial Systems Builder</span></a>
+    <a class="site-nav__logo" href="../index.html">Tihomir Todorov<span class="site-nav__logo-sub">Sales × Technology</span></a>
     <ul class="site-nav__links">
-      <li><a href="../index.html#track-record">Track Record</a></li>
-      <li><a href="../index.html#case-studies">Case Studies</a></li>
-      <li><a href="../index.html#how-i-work">How I Work</a></li>
+      <li><a href="../index.html#track-record">Track record</a></li>
+      <li><a href="../index.html#how-i-work">How I work</a></li>
+      <li><a href="../index.html#case-studies">Tools I've built</a></li>
       <li><a href="../index.html#contact">Contact</a></li>
     </ul>
   </div>
@@ -28,22 +27,22 @@
   <div class="container">
     <a class="case-header__back" href="../index.html#case-studies">← All case studies</a>
     <p class="case-header__tag reveal">Pricing & Quoting</p>
-    <h1 class="case-header__title reveal">AI Quoting System</h1>
-    <p class="case-header__dek reveal">Quote preparation took up to twenty minutes and varied by whoever wrote it. I reverse-engineered the business’s existing pricing logic and encoded it into software — I didn’t invent a new pricing model, I standardised the real one.</p>
+    <h1 class="case-header__title reveal">AI Quoting Tool</h1>
+    <p class="case-header__dek reveal">A quote could take up to twenty minutes and came out differently depending on who wrote it. I worked out the pricing rules the business already used and built them into software. I didn't invent a new pricing model. I made the existing one consistent.</p>
     <div class="outcome-card reveal">
     <div class="outcome-card__cell">
       <div class="outcome-card__label">Business Problem</div>
-      <div class="outcome-card__value">Quotes took 10–20 minutes and varied by surveyor</div>
+      <div class="outcome-card__value">Quotes took 10 to 20 minutes and varied by surveyor</div>
     </div>
     <div class="outcome-card__arrow" aria-hidden="true">→</div>
     <div class="outcome-card__cell">
       <div class="outcome-card__label">Solution</div>
-      <div class="outcome-card__value">AI extraction + reverse-engineered pricing engine + rules-first Volume Calculator</div>
+      <div class="outcome-card__value">AI inventory extraction, a pricing engine built from real jobs, and a rules-first Volume Calculator</div>
     </div>
     <div class="outcome-card__arrow" aria-hidden="true">→</div>
     <div class="outcome-card__cell outcome-card__cell--outcome">
       <div class="outcome-card__label">Outcome</div>
-      <div class="outcome-card__value">Under 1 minute per quote, with standardised pricing logic</div>
+      <div class="outcome-card__value">Under a minute per quote, with the same pricing logic every time</div>
     </div>
   </div>
   </div>
@@ -76,7 +75,7 @@
   </div>
 
   <div class="section--tight">
-    <p class="section__eyebrow reveal" style="margin-top:var(--space-5)">System Flow</p>
+    <p class="section__eyebrow reveal" style="margin-top:var(--space-5)">How it flows</p>
     <div class="flow-diagram reveal" aria-label="System flow diagram">
     <span class="flow-step">Docx survey upload</span><span class="flow-arrow" aria-hidden="true">→</span><span class="flow-step">AI inventory extraction</span><span class="flow-arrow" aria-hidden="true">→</span><span class="flow-step">Volume Calculator (rules + AI fallback)</span><span class="flow-arrow" aria-hidden="true">→</span><span class="flow-step">Pricing engine</span><span class="flow-arrow" aria-hidden="true">→</span><span class="flow-step">Quote output</span>
   </div>
@@ -94,7 +93,7 @@
       <div class="stage__content">
         <span class="stage__label">Business Problem</span>
         <h3 class="stage__title">What was costing the business</h3>
-        <p class="stage__body">Quotes took anywhere from ten to twenty minutes to prepare, and pricing varied depending on which surveyor wrote it. In a market where the fastest, most consistent quote often wins the job, that variability was a direct cost — both in lost deals to faster competitors and in margin risk from under- or over-quoting.</p>
+        <p class="stage__body">A quote took anywhere from ten to twenty minutes to put together, and the price depended on which surveyor wrote it. In a market where the quickest, most consistent quote often wins the job, that cost us. We lost jobs to faster competitors, and we risked our margins by quoting too low or too high.</p>
       </div>
     </div>
 
@@ -106,7 +105,7 @@
       <div class="stage__content">
         <span class="stage__label">My Goal</span>
         <h3 class="stage__title">What I set out to do</h3>
-        <p class="stage__body">Deliberately not to invent a new pricing model. The business already had years of operational pricing knowledge — staff cost, fuel, vehicle profit margins, packing material pricing, van capacity rules — it just lived in individual surveyors' heads rather than in a system. My goal was to reverse-engineer that existing logic from real jobs and encode it faithfully, so every quote reflected the same commercial judgement regardless of who produced it.</p>
+        <p class="stage__body">I didn't want to invent a new pricing model. The business already had years of pricing knowledge in staff costs, fuel, vehicle profit margins, packing material prices and van capacity rules. It just lived in individual surveyors' heads instead of in a system. I wanted to work that logic out from real jobs and build it in as it was, so every quote reflected the same judgement whoever produced it.</p>
       </div>
     </div>
 
@@ -118,7 +117,7 @@
       <div class="stage__content">
         <span class="stage__label">Architecture</span>
         <h3 class="stage__title">How it’s built</h3>
-        <p class="stage__body">A client-side web app that accepts a docx survey upload, extracts room-by-room inventory using a local AI model, and runs it through a pricing engine built directly from real historical jobs — covering staff costs, fuel, vehicle profit, packing materials, and van capacity constraints. A companion Volume Calculator handles the inventory-to-cubic-footage step: it matches item descriptions against a catalogue of hundreds of standard furniture items using a deterministic rules engine first, and only calls an AI model for the handful of items the rules can't confidently match — keeping AI cost and latency reserved for genuine edge cases rather than every line item.</p>
+        <p class="stage__body">It's a web app that runs in the browser. You upload a docx survey, a local AI model pulls out the inventory room by room, and a pricing engine built from real past jobs does the rest, covering staff costs, fuel, vehicle profit, packing materials and van capacity. A companion Volume Calculator turns the inventory into cubic footage. It matches item descriptions against a catalogue of hundreds of standard furniture items using fixed rules first, and only asks an AI model about the few items the rules can't confidently match. That keeps the AI cost and delay for the odd cases instead of every line.</p>
       </div>
     </div>
 
@@ -130,7 +129,7 @@
       <div class="stage__content">
         <span class="stage__label">Implementation</span>
         <h3 class="stage__title">The details that mattered</h3>
-        <p class="stage__body">The rules-first, AI-fallback design in the Volume Calculator was a deliberate cost and speed decision: most inventory items match cleanly against the catalogue with rule-based matching, and only genuinely ambiguous or typo-heavy entries get sent to an AI model, with automatic fallback across models if one is rate-limited. The pricing logic itself came from studying real completed jobs rather than working from a theoretical formula, which meant the tool had to accommodate the actual messiness of real quotes, not an idealised version of them.</p>
+        <p class="stage__body">I put rules first and AI second in the Volume Calculator to keep it cheap and quick. Most items match the catalogue cleanly, and only ambiguous or badly typed entries go to an AI model, which falls back to another model automatically if one is rate-limited. I built the pricing logic by studying real completed jobs instead of starting from a theoretical formula, so the tool had to cope with how messy real quotes are.</p>
       </div>
     </div>
 
@@ -154,7 +153,7 @@
       <div class="stage__content">
         <span class="stage__label">Business Outcome</span>
         <h3 class="stage__title">What changed</h3>
-        <p class="stage__body">Quote preparation reduced from approximately ten to twenty minutes to under one minute for a standard survey, while applying consistent commercial pricing logic regardless of who runs the quote. The salesperson still reviews and finalises every output — the tool removes the repetitive manual work, not the judgement.</p>
+        <p class="stage__body">Quote preparation dropped from roughly ten to twenty minutes to under one minute for a standard survey, and the pricing logic is the same whoever runs it. The salesperson still checks and signs off every quote. The tool takes away the repetitive work, not the judgement.</p>
       </div>
     </div>
 
@@ -166,7 +165,7 @@
       <div class="stage__content">
         <span class="stage__label">Lessons Learned</span>
         <h3 class="stage__title">What I took from it</h3>
-        <p class="stage__body">Removing internal friction creates more selling time — the real win here wasn't a smarter pricing model, it was giving surveyors back the twenty minutes per quote they used to spend on arithmetic. I also learned that encoding existing expertise faithfully is often more valuable, and more defensible, than trying to redesign it from scratch.</p>
+        <p class="stage__body">Taking away internal friction gives you more time to sell. The main win wasn't a cleverer pricing model. It was giving surveyors back the twenty minutes per quote they used to spend on arithmetic. I also learned that building in expertise the business already has is often worth more than redesigning it from scratch.</p>
       </div>
     </div>
   </div>
@@ -175,21 +174,16 @@
         <p class="section__eyebrow reveal">Engineering Decisions</p>
         <div class="rationale reveal">
     <div class="rationale__q">Why local AI (Ollama) for extraction?</div>
-    <div class="rationale__a">Survey documents contain customer data. Running extraction locally means that data never has to leave the business.</div>
+    <div class="rationale__a">Survey documents hold customer data. Running extraction locally means that data doesn't have to leave the business.</div>
   </div>
 <div class="rationale reveal">
     <div class="rationale__q">Why rules first, AI as fallback?</div>
-    <div class="rationale__a">Most inventory items match a known catalogue entry with a simple pattern. Reserving AI calls for genuinely ambiguous items keeps the tool fast and keeps AI cost proportional to actual difficulty, not total volume.</div>
+    <div class="rationale__a">Most inventory items match a catalogue entry with a simple pattern. Saving AI calls for the unclear ones keeps the tool fast, and keeps the cost in line with how hard the job actually is, not how many items there are.</div>
   </div>
 <div class="rationale reveal">
     <div class="rationale__q">Why reverse-engineer the existing pricing model rather than design a new one?</div>
-    <div class="rationale__a">The business already had years of correct commercial judgement built into how surveyors priced jobs. The risk wasn’t that the logic was wrong — it was that it only lived in people’s heads. Encoding it faithfully was more valuable, and more defensible, than replacing it.</div>
+    <div class="rationale__a">The business already had years of sound pricing judgement in how surveyors priced jobs. The logic wasn't wrong. It just lived in people's heads. Putting it into a system as it was seemed more useful, and easier to defend, than replacing it.</div>
   </div>
-      </div>
-
-      <div class="section--tight">
-        <p class="section__eyebrow reveal">Under the Hood</p>
-        
       </div>
     </div>
 
@@ -207,8 +201,8 @@
         <div class="aside-shot__caption">Volume calculator using fuzzy logic and AI</div>
       </div>
 <div class="aside-shot reveal">
-        <img src="../assets/Calculator1.jpg" alt="Volume calculator — calculating volume, weight, and more" loading="lazy">
-        <div class="aside-shot__caption">Volume calculator — calculating volume, weight, and more</div>
+        <img src="../assets/Calculator1.jpg" alt="Volume calculator: calculating volume, weight, and more" loading="lazy">
+        <div class="aside-shot__caption">Volume calculator: calculating volume, weight, and more</div>
       </div>
     </div>
   </div>
@@ -223,8 +217,8 @@
 
 <footer class="footer">
   <div class="container footer__inner">
-    <span>Tihomir Todorov — Commercial Systems Builder</span>
-    <span>Copyright 2026</span>
+    <span>Tihomir Todorov</span>
+    <span>© 2026</span>
   </div>
 </footer>
 <script src="../assets/app.js" defer></script>
