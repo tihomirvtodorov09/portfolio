@@ -260,3 +260,176 @@ img[data-lb]:hover { filter: brightness(0.97); }
 /* linked project titles */
 .other-item h3 a { color: var(--accent); border-bottom: 2px solid var(--accent-soft); }
 .other-item h3 a:hover { border-bottom-color: var(--accent); }
+
+/* ============================================================
+   RESPONSIVE LAYER
+   Large screens 1600+ | laptops | tablets 901-1024 | tablets 721-900 | phones 720 and under | small phones 400 and under
+   This block sits last on purpose, so it can adjust anything above.
+   ============================================================ */
+
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+img, video { height: auto; }
+h1, h2, h3, p, li, td, a { overflow-wrap: break-word; }
+
+/* stop wide content (code, long chips) from stretching the page */
+.case-body__main, .case-body__aside, .stage__content { min-width: 0; }
+.flow-step { max-width: 100%; }
+
+/* keep content clear of phone notches and rounded corners */
+.container, .site-nav__inner {
+  padding-left: max(28px, env(safe-area-inset-left));
+  padding-right: max(28px, env(safe-area-inset-right));
+}
+.footer { padding-bottom: calc(52px + env(safe-area-inset-bottom)); }
+
+/* the side images column: scroll inside itself if it is taller than the screen */
+@media (min-width: 901px) {
+  .case-body__aside {
+    max-height: calc(100vh - 124px);
+    max-height: calc(100dvh - 124px);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    padding-right: 2px;
+  }
+}
+
+/* ---------- large screens ---------- */
+@media (min-width: 1600px) {
+  :root { --container: 960px; --container-wide: 1280px; }
+  body { font-size: 19px; }
+}
+@media (min-width: 2200px) {
+  :root { --container-wide: 1440px; }
+  body { font-size: 20px; }
+}
+
+/* ---------- tablets, landscape (901 to 1024) ---------- */
+@media (min-width: 901px) and (max-width: 1024px) {
+  .container, .site-nav__inner { padding-left: max(24px, env(safe-area-inset-left)); padding-right: max(24px, env(safe-area-inset-right)); }
+  .section { padding-top: 72px; padding-bottom: 72px; }
+  .hero { padding-top: 72px; padding-bottom: 64px; }
+  .case-body { grid-template-columns: 1fr 280px; gap: 40px; }
+  .method-grid { gap: 12px; }
+  .method-item { padding: 22px 18px; }
+}
+
+/* ---------- tablets, portrait and large phones landscape (721 to 1000) ---------- */
+@media (min-width: 761px) and (max-width: 1000px) {
+  .case-preview { grid-template-columns: 130px 1fr; gap: 10px 24px; }
+  .case-preview__link { grid-column: 2; align-self: start; }
+  .case-preview.featured { padding: 34px 28px; }
+}
+@media (max-width: 900px) {
+  .case-body { margin-top: 48px; }
+  .case-body__aside { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
+  .case-body__aside > .section__eyebrow { grid-column: 1 / -1; }
+  .section { padding-top: 64px; padding-bottom: 64px; }
+}
+
+/* lightbox sizing that follows the real visible height on phones */
+.lb__img { max-height: calc(100dvh - 170px); }
+.lb__close { top: max(16px, env(safe-area-inset-top)); right: max(20px, env(safe-area-inset-right)); }
+
+/* ---------- phones (720 and under) ---------- */
+@media (max-width: 720px) {
+  html { scroll-padding-top: 112px; }
+  body { font-size: 17px; }
+  .container, .site-nav__inner { padding-left: max(20px, env(safe-area-inset-left)); padding-right: max(20px, env(safe-area-inset-right)); }
+  .section { padding-top: 56px; padding-bottom: 56px; }
+  .hero { padding-top: 40px; padding-bottom: 48px; }
+  .hero__intro + .hero__title { margin-top: 28px; }
+  .hero__quote { padding-left: 18px; margin-top: 32px; }
+  .stat-strip { margin-top: 44px; }
+  .case-header { padding: 36px 0 32px; }
+  .case-header__dek, .section__lede, .contact-roles { font-size: 17.5px; }
+  .case-header__tag { margin-top: 20px; }
+  .outcome-card { margin-top: 28px; }
+  .compare-grid { margin-top: 36px; gap: 22px; }
+  .stage { grid-template-columns: 16px 1fr; gap: 16px; padding-bottom: 40px; }
+  .stage__title { font-size: 22px; }
+  .stage__body, .rationale__a, .rationale__q, .case-preview p, .stack-row p, .other-item p, .now-item p { font-size: 16.5px; }
+  .case-preview h3 { font-size: 21px; }
+  .case-list { margin-top: 32px; }
+  .stack-chip { border-radius: 14px; }
+  .code-block pre { font-size: 12.5px; padding: 14px; }
+  .contact-section { padding-top: 64px; padding-bottom: 72px; }
+  .contact-links { flex-direction: column; }
+  .contact-links a { text-align: center; width: 100%; }
+  .footer__inner { flex-direction: column; gap: 4px; }
+  .case-body__aside { grid-template-columns: 1fr; }
+}
+
+/* the sales table turns into stacked rows on phones */
+@media (max-width: 560px) {
+  table.ledger, table.ledger tbody { display: block; width: 100%; }
+  table.ledger thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  table.ledger tr { display: grid; grid-template-columns: auto 1fr; column-gap: 16px; padding: 14px 0; border-bottom: 1px solid var(--line); }
+  table.ledger td { border: none; padding: 2px 0; }
+  table.ledger td:first-child { color: var(--accent-2); }
+  table.ledger td:nth-child(2) { text-align: right; }
+  table.ledger td:nth-child(3) { grid-column: 1 / -1; font-size: 15px; padding-top: 4px; }
+  table.ledger td:nth-child(3):empty { display: none; }
+}
+
+@media (max-width: 700px) {
+  .lb__img { max-height: calc(100dvh - 220px); }
+  .lb__prev { bottom: max(16px, env(safe-area-inset-bottom)); }
+  .lb__next { bottom: max(16px, env(safe-area-inset-bottom)); }
+}
+
+/* ---------- small phones (400 and under) ---------- */
+@media (max-width: 400px) {
+  .container, .site-nav__inner { padding-left: max(16px, env(safe-area-inset-left)); padding-right: max(16px, env(safe-area-inset-right)); }
+  .hero__title { font-size: 40px; }
+  .section__heading { font-size: 28px; }
+  .stat-strip { grid-template-columns: 1fr; }
+  .case-preview.featured { padding: 26px 18px; }
+  .method-item, .now-item { padding: 20px 18px; }
+}
+
+/* ---------- touch screens ---------- */
+@media (pointer: coarse) {
+  .site-nav__links a { display: flex; align-items: center; min-height: 44px; }
+  .case-header__back { display: inline-flex; align-items: center; min-height: 44px; }
+  .btn-link { display: inline-block; padding: 10px 0; }
+  .lb__btn { width: 52px; height: 52px; }
+}
+/* no sticky hover colours after a tap */
+@media (hover: none) {
+  .case-preview:hover { background: transparent; }
+  .case-preview.featured:hover { background: var(--ink); }
+  img[data-lb]:hover { filter: none; }
+}
+
+/* ---------- short landscape screens (phones turned sideways) ---------- */
+@media (max-height: 520px) and (orientation: landscape) {
+  .site-nav { position: static; }
+  html { scroll-padding-top: 16px; }
+  .case-body__aside { position: static; max-height: none; overflow: visible; }
+  .lb { padding-top: 56px; padding-bottom: 12px; }
+  .lb__img { max-height: calc(100dvh - 110px); }
+  .lb__cap { font-size: 14px; margin-top: 8px; }
+}
+
+/* ---------- print ---------- */
+@media print {
+  .site-nav, .skip-link, .lb { display: none; }
+  body { font-size: 11pt; }
+  .section, .contact-section { padding-top: 28px; padding-bottom: 28px; }
+  .hero { padding-top: 24px; padding-bottom: 28px; }
+  .case-preview.featured { background: none; color: #000; border: 1px solid #999; }
+  .case-preview.featured h3, .case-preview.featured p, .case-preview.featured .case-preview__tag, .case-preview.featured .case-preview__link { color: #000; }
+  .case-body__aside { position: static; max-height: none; overflow: visible; }
+}
+
+/* ---------- phone nav: all four links visible, solid background ---------- */
+.site-nav { background: rgba(255,255,255,0.97); }
+@media (max-width: 720px) {
+  .site-nav__inner { gap: 4px; padding-top: 10px; padding-bottom: 8px; }
+  .site-nav__links { gap: 0; flex-wrap: wrap; overflow-x: visible; }
+  .site-nav__links a { font-size: 14px; padding: 7px 9px; }
+  .site-nav__links li:last-child a { margin-left: 0; }
+}
+@media (max-width: 430px) {
+  .site-nav__links a { font-size: 13px; padding: 7px 6px; }
+}
